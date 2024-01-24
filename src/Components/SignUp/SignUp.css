@@ -1,0 +1,114 @@
+#parentContainer {
+    height: 100vh;
+    margin: auto;
+    background: linear-gradient(to right, #04f1fb, #306cc7);
+    
+  }
+  
+  #parentContainer h2 {
+    color: #0f6e6e;
+    font-weight: 600;
+    font-size: 2em;
+    margin-top: 10vh;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #formContainer {
+    padding: 4vh 0px;
+    height: 40vh;
+    width: 35vw;
+    background-color: rgb(200, 222, 241);
+    box-shadow: 0.3vw 0.3vw 0.5vw #3e3c3c;;
+    overflow-y:auto;
+    /* flex: 1; */
+  }
+  
+  #formContainer form {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .field {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    flex-grow: 1;
+    padding: 1vh;
+    justify-content: space-between;
+  }
+  
+  form label {
+    padding: 0.2vw;
+    /* flex-grow: 1; */
+    width: 25%;
+    color: #6d6a84;
+    border: 0.2vw solid rgb(200, 222, 241);
+  }
+  
+  form label:hover {
+    border: 0.2vw solid rgb(74 139 233);
+    background-color: rgb(95 195 238);
+    border-radius: 0.2vw;
+  }
+  
+  form input {
+    padding: 0.3vw;
+    border-radius: 0.5vw;
+    border: 0.1vw solid #393999;
+    width: 60%;
+    /* flex-grow: 2; */
+  }
+  
+  form input:hover {
+      border: 0.2vw solid rgb(74 139 233);
+      
+  }
+  
+  form input::placeholder {
+    font-style: italic;
+    font-size: smaller;
+  }
+  
+  .error {
+      /* border: 0.1vw solid rgb(74 139 233); */
+      color: rgb(10, 104, 144);
+      position: relative;
+      /* left: 62vw; */
+      top: 1vh;
+      z-index: 10;
+      padding: 1vh 1vw;
+      border-radius: 10vw;
+  }
+  
+  form button {
+    width: 50%;
+    flex-grow: 1;
+    height: 30%;
+    padding: 1vh;
+    background-color: #3dd0d0;
+    border: 0.2vw solid #626281;
+    border-radius: 0.2vw;
+    position: relative;
+    top: 5vh;
+  }
+  #genericError{
+    font-weight: bold;
+    color: red;
+    position: relative;
+    top: -5vh;
+  }
+
+  form button:hover {
+    background-color: rgb(67 123 148);
+  }
+  

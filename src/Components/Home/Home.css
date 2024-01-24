@@ -1,0 +1,24 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.field{
+    justify-content: space-between;
+    
+}
+
+.icon, .data{
+    border: 0.1vw solid blue;
+    margin: 0.1vw 0.3vw;
+    
+    
+}
+.icon{
+    flex-grow: 1;
+}
+.data{
+    flex-grow: 2;
+}

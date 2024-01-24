@@ -23,7 +23,14 @@ const SignupPage = () => {
     const formData = new FormData(e.target);
     const details = Object.fromEntries(formData.entries());
 
-    if (errors) {
+    if (
+      errors.name ||
+      errors.email ||
+      errors.mobile ||
+      errors.password ||
+      errors.confirmPassword
+    ) {
+      console.log(errors);
       return;
     }
 
